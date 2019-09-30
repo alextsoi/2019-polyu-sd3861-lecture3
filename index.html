@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <title>Self Checking Tool</title>
+  </head>
+  <body>
+    <!-- As a heading -->
+    <nav class="navbar navbar-light bg-light">
+      <span class="navbar-brand mb-0 h1">Self Checking Tool</span>
+    </nav>
+
+    <div class="container">
+        <br/><br/><br/><br/>
+
+        <form id="form">
+            <div class="form-group">
+                <label for="github_account">Github Account</label>
+                <input type="github_account" class="form-control" id="github_account" aria-describedby="githubHelp" placeholder="Enter your github account">
+                <small id="githubHelp" class="form-text text-muted">Please don't retry so many times in a short period.</small>
+              </div>
+              <button id="submit" type="submit" class="btn btn-primary">Check</button>
+        </form>
+
+        <br/><br/><br/><br/>
+
+        <div id="result">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Task #</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Result</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Detail</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>README.md file with exactly "Lecture 2"</td>
+                    <td id="result1"></td>
+                    <td id="result1_status"></td>
+                    <td id="result1_detail"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>lecture2.md file with any word</td>
+                    <td id="result2"></td>
+                    <td id="result2_status"></td>
+                    <td id="result2_detail"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Website is found in your repo!!</td>
+                    <td id="result3"></td>
+                    <td id="result3_status"></td>
+                    <td id="result3_detail"></td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+    <script
+      src="./node_modules/bootstrap/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="./js/index.js"></script>
+  </body>
+</html>
