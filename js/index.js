@@ -129,7 +129,7 @@ $(document).ready(function(){
             },
             error: function(response){
                 if(response.status == 404){
-                    $('#result3').text('Note: lecture2.md is not found.');
+                    $('#result3').text('Note: website is not found.');
                 }
                 taskCompleted++;
                 taskCompletedCheck();
